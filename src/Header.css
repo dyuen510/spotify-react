@@ -18,6 +18,7 @@
 .header__left > input {
   border: none;
   width: 100%;
+  outline: none; /* removes the outline in the input/textarea */
 }
 
 .header__right {
