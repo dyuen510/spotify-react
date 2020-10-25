@@ -49,7 +49,7 @@ function App() {
       });
     }
 
-    console.log("I HAVE A TOKEN >>>>", token);
+    // console.log("I HAVE A TOKEN >>>>", token);
   }, []); //if empty run once, if [name] then runs once and whenever name is changed.
   // console.log("person", user);
   // console.log("token", token);

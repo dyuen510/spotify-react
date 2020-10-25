@@ -4,6 +4,7 @@ export const initialState = {
   playing: false,
   item: null,
   //Remove after finished developing
+ 
 };
 
 const reducer = (state, action) => {
