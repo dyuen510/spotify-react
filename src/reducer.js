@@ -3,7 +3,6 @@ export const initialState = {
   playlist: [],
   playing: false,
   item: null,
-  //Remove after finished developing
 };
 
 const reducer = (state, action) => {
@@ -12,7 +11,7 @@ const reducer = (state, action) => {
   switch (action.type) {
     case "SET_USER":
       return {
-        ...state, // must have this line, which keeps everything that was in user state
+        ...state,
         user: action.user,
       };
     case "SET_TOKEN":

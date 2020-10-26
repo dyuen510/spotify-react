@@ -13,7 +13,6 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className ='footer__left'>
-        {/* <p>Album and song details</p> */}
         <img className='footer__albumLogo' src='https://upload.wikimedia.org/wikipedia/en/1/1d/Titaniumsong.jpg' alt='' />
         <div className = 'footer__songInfo'>
           <h4>Titanium</h4>
@@ -22,7 +21,6 @@ const Footer = () => {
 
       </div>
       <div className ='footer__center'>
-        {/* <p>Player controls</p> */}
         <ShuffleIcon className ='footer__green' />
         <SkipPreviousIcon className ='footer__icon' />
         <PlayCircleOutlineIcon fontSize='large' className='footer__icon' />

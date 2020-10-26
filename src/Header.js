@@ -8,7 +8,6 @@ const Header = () => {
     const [{ user }, dispatch] = useDataLayerValue();
 
     return (
-        // <p>hello</p>
         <div className='header'>
             <div className ='header__left'>
                 <SearchIcon />

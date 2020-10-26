@@ -19,13 +19,13 @@ const scopes = [
 
 export const getTokenFromUrl = () => {
   //pulling the access token from the URL
+        //go into initial array that is being returned, for access token decode the URI component
   return window.location.hash
     .substring(1)
     .split("&")
     .reduce((initial, item) => {
       let parts = item.split("=");
       initial[parts[0]] = decodeURIComponent(parts[1]);
-      //go into initial array that is being returned, for access token decode the URI component
 
       return initial;
     }, {});

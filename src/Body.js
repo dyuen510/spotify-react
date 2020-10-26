@@ -11,7 +11,6 @@ const Body = ({ spotify }) => {
   const [{ discover_weekly }, dispatch] = useDataLayerValue();
   return (
     <div className="body">
-      {/* <h1>I am the body</h1> */}
       <Header spotify={spotify} />
       
       <div className ='body__info'>
@@ -19,7 +18,6 @@ const Body = ({ spotify }) => {
         <div className ='body__infoText'>
           <strong>PLAYLIST</strong>
           <h2>Discover Weekly</h2>
-          {/* <p>description...</p> */}
           <p>{discover_weekly?.description}</p>
         </div>
       </div>
@@ -30,7 +28,6 @@ const Body = ({ spotify }) => {
           <FavoriteIcon fontSize='large'/>
           <MoreHorizon />
         </div>
-        {/* List of Songs */}
         {discover_weekly?.tracks.items.map(item => (
           <SongRow track={item.track} />
         ))}

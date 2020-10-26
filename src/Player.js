@@ -8,12 +8,9 @@ const Player = ({ spotify }) => {
   return (
     <div className="player">
       <div className="player__body">
-        {/* Sidebar */}
         <Sidebar />
-        {/* Body (The whole thing except the sidebar */}
         <Body />
       </div>
-      {/* Footer */}
       <Footer />
     </div>
   );
